@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario{
+    width: 600px;
+    height: auto;
+    padding: 25px;
+    border: 1px solid #a5a5a5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ebeaea;
+   
+}
+.titulo_formulario{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+.input-control.success input[type="text"],
+.input-control.success input[type="email"],
+.input-control.success input[type="password"],
+.input-control.success input[type="datetime-local"],
+.input-control.success select,
+.input-control.success textarea{
+    border-color: #09c372;
+}
+.input-control.error input[type="text"],
+.input-control.error input[type="email"],
+.input-control.error input[type="password"],
+.input-control.error select,
+.input-control.error textarea{
+    border-color: red;
+}
+
+
+.input-control input[type="text"],
+.input-control input[type="email"],
+.input-control input[type="password"],
+.input-control textarea {
+    width: 90%;
+    max-width: 90%;
+    padding: 10px;
+    margin-bottom: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ 
+input[type="datetime-local"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.input-control input[type="datetime-local"]:focus,
+.input-control input[type="text"]:focus,
+.input-control input[type="email"]:focus,
+.input-control input[type="password"]:focus,
+.input-control textarea:focus,
+.input-control select:focus {
+    border-color: #0071eb;
+    outline: none;
+}
+ 
+select {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ 
+option {
+    padding: 5px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Add some spacing if needed */
+}
+
+.boton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+ 
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.input-control .error {
+    color: red;
+    font-size: 14px;
+    height: 13px;
+}
+
+
+

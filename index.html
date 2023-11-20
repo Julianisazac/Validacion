@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>HC</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1 class="titulo_formulario">Historia clinica</h1>
+        <form action="" id="form">
+            <div class="formulario_bloque-uno">
+                <div class="input-control">
+                    <label for="text">Nombre</label>
+                    <input type="text" name="" id="text">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email">
+                    <div class="error"></div>
+                </div>
+               
+                <div class="input-control">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="" id="pass">
+                    <div class="error"></div>
+                </div>
+            </div>
+   
+            <div class="formulario_bloque-dos">
+                <div class="input-control">
+                    <label for="datetime">Fecha</label>
+                    <input type="datetime-local" name="" id="datetime">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="select">Seleccionar</label>
+                    <select name="" id="select">
+                        <option value="seleccionar">Elige</option>
+                        <option value="1">Cotizante</option>
+                        <option value="1">Beneficiario</option>
+                        <option value="1">Subsidiado</option>
+                    </select>
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div class="input-control">
+                <label for="textarea">Consulta</label>
+                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                <div class="error"></div>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="boton" name="" id="boton">Enviar</button>
+            </div>
+
+        </form>
+        
+    </div>
+    <script src="formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+
+
+</body>
+</html>
